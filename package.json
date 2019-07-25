@@ -1,0 +1,25 @@
+{
+  "name": "js-fun",
+  "version": "1.0.0",
+  "description": "Writing JavaScript using PHP programming syntax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yioio/js-fun.git"
+  },
+  "keywords": [
+    "php2js",
+    "php2javascript",
+    "js2php",
+    "javascript2php"
+  ],
+  "author": "yioio/js-fun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yioio/js-fun/issues"
+  },
+  "homepage": "https://github.com/yioio/js-fun#readme"
+}

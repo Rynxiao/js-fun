@@ -1,25 +1,28 @@
 {
-  "name": "js-fun",
-  "version": "1.0.0",
-  "description": "Writing JavaScript using PHP programming syntax",
-  "main": "index.js",
+  "name": "@yioio/ts-fun",
+  "version": "1.0.2",
+  "description": "Using typescript to write PHP functions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yioio/js-fun.git"
+    "test": "mocha  --reporter spec -r ts-node/register ./src/tests/**/*.test.ts"
   },
   "keywords": [
-    "php2js",
-    "php2javascript",
-    "js2php",
-    "javascript2php"
+    "php"
   ],
-  "author": "yioio/js-fun",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yioio/js-fun/issues"
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/should": "^13.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "should": "^13.2.3",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
   },
-  "homepage": "https://github.com/yioio/js-fun#readme"
+  "dependencies": {
+    "@types/node": "^12.6.8"
+  }
 }

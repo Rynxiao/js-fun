@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "mocha  --reporter spec -r ts-node/register ./src/tests/**/*.test.ts"
+    "test": "mocha  --reporter spec -r ts-node/register ./tests/**/*.test.ts"
   },
   "keywords": [
     "php"

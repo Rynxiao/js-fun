@@ -6,7 +6,6 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "mocha  --reporter spec -r ts-node/register ./tests/**/*.test.ts",
-    "precommit": "npm run eslint && lint-staged",
     "eslint": "eslint --ext .tsx,.ts --fix ./src",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "format": "eslint --fix 'src/**/*.{js,ts,tsx}'"

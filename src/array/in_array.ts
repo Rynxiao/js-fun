@@ -13,8 +13,7 @@ import * as arrayValuesFunc from './array_values';
  * return boolean
  */
 export function inArray(
-  needle: string | number | boolean,
-  haystack: any,
+  needle: string | number | boolean,  haystack: any,
   strictMode: boolean = false
 ): boolean {
   let newHayStack = [];

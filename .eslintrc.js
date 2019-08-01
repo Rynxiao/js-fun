@@ -19,7 +19,7 @@ module.exports = {
       sourceType: 'module',
   },
   rules: {
-      // 如果有不适合的规则，可以在此调整
-  // ...
+    // 为了兼容PHP函数的真实情况，函数必须支持传入 any 类型的参数 
+    "@typescript-eslint/no-explicit-any": "off"
   },
 };

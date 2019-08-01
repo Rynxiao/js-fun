@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * 使用示例方法为：
  *   import FunArray from '@yioio/ts-fun/funArray'
- *   FunArray.array_values(...)
+ *   FunArray.arrayValues(...)
  *
  * 以下参数注释请到src/funArray.ts调用处查看
  * @param needle
@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
  *
  * return [] 元组
  */
-// array_values ( array $array ) : array
-function array_values(array) {
+// arrayValues ( array $array ) : array
+function arrayValues(array) {
     if (array.constructor instanceof Object == false) {
         return [];
     }
@@ -26,4 +26,4 @@ function array_values(array) {
     }
     return newArray;
 }
-exports.array_values = array_values;
+exports.arrayValues = arrayValues;

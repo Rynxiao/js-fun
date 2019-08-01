@@ -4,5 +4,5 @@
  * @param haystack 要被检查的字符串
  * @param strictMode
  */
-export declare function array_values(array: any): any;
-export declare function in_array(needle: string | number | boolean, haystack: any, strictMode?: boolean): boolean;
+export declare function arrayValues(array: any): any;
+export declare function inArray(needle: string | number | boolean, haystack: any, strictMode?: boolean): boolean;

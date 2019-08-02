@@ -28,23 +28,23 @@ export function inArray(
 
   let ret: boolean = newHayStack.includes(needle);
 
-  if (ret == true) {
+  if (ret) {
     //配置 (3.1, [3.1]) ("3.1", ["3.1"]) ("a", ["a"])
     return true;
   }
 
-  if (strictMode == false) {
+  if (!strictMode) {
     //配置 ("3.1", [3.1])
     //代码走到这一行，表示可能是needle作为数字在元组中找不到
     ret = newHayStack.includes(+needle);
-    if (ret == true) {
+    if (ret) {
       return true;
     }
 
     //配置 (3.1, ["3.1"])
     //代码走到这一行，表示可能是数字needle作为字符串在元组中找不到
     ret = newHayStack.includes(`${needle}`);
-    if (ret == true) {
+    if (ret) {
       return true;
     }
   }

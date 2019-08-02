@@ -4,25 +4,17 @@
  *   FunArray.arrayValues(...)
  *
  * 以下参数注释请到src/funArray.ts调用处查看
- * @param needle
- * @param haystack
- * @param strictMode
  *
  * return [] 元组
+ * @param array
  */
+import {BasicType, TupleLike} from '../type';
+
 // arrayValues ( array $array ) : array
-export function arrayValues(array: any): any {
-  if (array.constructor instanceof Object == false) {
-    return [];
+export function arrayValues(array: TupleLike<BasicType>): any[] {
+  if (Array.isArray(array)) {
+    return array;
+  } else {
+    return Object.values(array);
   }
-
-  let newArray = [];
-  let i = 0;
-  for (let key of Object.keys(array)) {
-    if (array.hasOwnProperty(key)) {
-      newArray[i++] = array[key];
-    }
-  }
-
-  return newArray;
 }

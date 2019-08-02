@@ -1,13 +1,12 @@
 import * as arrayValuesFunc from './array_values';
 import * as inArrayFunc from './in_array';
+import {BasicType, TupleLike} from '../type';
 
 /**
  *
- * @param needle 要检查的值，支持字符串，数字，布尔
- * @param haystack 要被检查的字符串
- * @param strictMode
+ * @param array
  */
-export function arrayValues(array: any): any {
+export function arrayValues(array: TupleLike<BasicType>): any[] {
   return arrayValuesFunc.arrayValues(array);
 }
 
